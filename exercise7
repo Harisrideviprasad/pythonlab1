@@ -1,0 +1,304 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPD4bUgPJXnpa+B8Eu+0gHM",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Harisrideviprasad/pythonlab1/blob/main/exercise7\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AZV8_ZBGYVSH",
+        "outputId": "10a9807f-bfc4-4bac-a8c2-4e94beb04b08"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(1, 2, 3, 9, 7, 8)\n",
+            "(1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3)\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "3\n",
+            "no\n"
+          ]
+        }
+      ],
+      "source": [
+        "t1=(1,2,3)\n",
+        "t2=(9,7,8)\n",
+        "print(t1+t2)\n",
+        "print(t1*4)\n",
+        "for i in t1:\n",
+        "  print(i)\n",
+        "print(len(t1))\n",
+        "if \"h\" in t1:\n",
+        "  print(\"yes\")\n",
+        "else:\n",
+        "  print(\"no\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "t=(10,20,10,30,10,40)\n",
+        "print(t.count(10))\n",
+        "print(t.index(30))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GtZ9EPpip6mf",
+        "outputId": "6330f51e-f1a4-41f9-fae2-cfa9d55d7b60"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n",
+            "3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "t=(10,20,30,40,50)\n",
+        "print(len(t))\n",
+        "print(max(t))\n",
+        "print(min(t))\n",
+        "print(sum(t))\n",
+        "print(sorted(t))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "APALiK_YquwZ",
+        "outputId": "07fd60b7-81ea-45c7-cb39-323ecd4309da"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5\n",
+            "50\n",
+            "10\n",
+            "150\n",
+            "[10, 20, 30, 40, 50]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "names=(\"hari\",\"ravi\",\"kiran\")\n",
+        "marks=(85,90,95)\n",
+        "result=zip(names,marks)\n",
+        "print(result)\n",
+        "for names,marks in result:\n",
+        "  print(names,marks)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "P97fO_-Nq8eP",
+        "outputId": "80712b40-5cca-4b99-f487-93e6cd9c4a2a"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<zip object at 0x7a0b21c228c0>\n",
+            "hari 85\n",
+            "ravi 90\n",
+            "kiran 95\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=tuple(map(int,input(\"enter a number\").split()))\n",
+        "print(a)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GJCmNYPLrgd4",
+        "outputId": "006eb511-4fbd-4cd0-876c-93ae1e0da8f6"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter a number22 48 32 143 18 25\n",
+            "(22, 48, 32, 143, 18, 25)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "t=(1,2,3,4,5)\n",
+        "a=list(t)\n",
+        "print(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Z9qB8QyasBMv",
+        "outputId": "ddc41019-beb0-44b3-df71-f8809fb6f513"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1, 2, 3, 4, 5]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#write a program to create tuples(name,age,address,college) for atleast two members and concatenate the tuples and print concatenated tuples\n",
+        "stud1=(\"john\",20,\"bvrm\",\"vit\")\n",
+        "stud2=(\"hari\",22,\"rjy\",\"vit\")\n",
+        "print(stud1+stud2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dHZtFvE6sYBe",
+        "outputId": "aabb75f9-baa2-4a8f-dc8e-11ae927e5d15"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "('john', 20, 'bvrm', 'vit', 'hari', 22, 'rjy', 'vit')\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#write a program to count the no of vowels in a string (no control flow allowed)\n",
+        "s=str(input(\"enter a string:\"))\n",
+        "s1=s.lower()\n",
+        "vowels_count=s1.count(\"a\")+s1.count(\"e\")+s1.count(\"i\")+s1.count(\"o\")+s1.count(\"u\")\n",
+        "print(\"the no of vowels are\",vowels_count)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "y-XKJ_zduY2o",
+        "outputId": "649cbaea-c2e2-4bf9-9183-21382dbf8336"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter a string:jameslee\n",
+            "the no of vowels are 4\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#set operations\n",
+        "A={1,2,3}\n",
+        "B={3,4,5}\n",
+        "print(A|B) #union\n",
+        "print(A&B) #INTERSECTION\n",
+        "print(A-B)\n",
+        "print(A^B)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "L9QA5o8Xu_0H",
+        "outputId": "63a27e39-90c5-4c8b-fd30-d6ea76ed8367"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{1, 2, 3, 4, 5}\n",
+            "{3}\n",
+            "{1, 2}\n",
+            "{1, 2, 4, 5}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "3UhTceUU73uM"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
