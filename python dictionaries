@@ -1,0 +1,133 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOltPMhUiHgET0Cma/Cc667",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Harisrideviprasad/pythonlab1/blob/main/python%20dictionaries\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 3,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NWQQa05ihcP3",
+        "outputId": "d03f9e4e-47ef-4177-e954-b5a353387369"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "name\n",
+            "yes\n"
+          ]
+        }
+      ],
+      "source": [
+        "d={\"s.no\":210,\"name\":\"hari\",\"grade\":8.9}\n",
+        "key=input()\n",
+        "if key in d:\n",
+        "  print(\"yes\")\n",
+        "else:\n",
+        "  print(\"no\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "d[\"age\"]=21\n",
+        "print(d)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lcUbk8c-r8pd",
+        "outputId": "5003668a-b0b5-432c-b0eb-dcfdecd4b086"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'s.no': 210, 'name': 'hari', 'grade': 8.9, 'age': 21}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "d.update({\"address\":\"bvrm\"})\n",
+        "print(d)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "U5iLjMSFsHsF",
+        "outputId": "6b768a15-7f50-4a39-99ee-b95b2e4545b6"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'s.no': 210, 'name': 'hari', 'grade': 8.9, 'age': 21, 'address': 'bvrm'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "d={1:2,2:4,3:9}\n",
+        "print(sum(d))\n",
+        "print(sum(d.values()))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6_vwiqdstHz_",
+        "outputId": "89971e90-c264-4a49-dc8a-eb37aadea7d7"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "6\n",
+            "15\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
